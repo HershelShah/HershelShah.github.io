@@ -1,90 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Hershel Shah</title>
-  <meta name="description" content="Personal Website">
-  <meta name="author" content="Hershel Shah">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hershel Shah - Senior GPU Software Engineer specializing in CUDA, C++, and high-performance computing. Available for full-time and contract opportunities.">
+    <meta name="author" content="Hershel Shah">
+    <meta name="keywords" content="GPU Engineer, CUDA, C++, Software Engineer, High Performance Computing, Computer Vision, Roche, Contract Developer">
+    <title>Hershel Shah | Senior GPU Software Engineer</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body bgcolor="#FF">
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">HS</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="column" style="padding: 5%">
-        <font color="white">
-        <h1>Hello, I'm Hershel!</h1>
-        <h4>and I am an engineer...</h4>
-        </font>
-      </div>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hershel Shah</h1>
+            <h2 class="hero-subtitle">Senior GPU Software Engineer</h2>
+            <p class="hero-description">Specializing in CUDA, High-Performance Computing & Real-Time Systems</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="files/hershel_shah_resume_2019.pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Senior GPU Software Engineer at Roche Diagnostics with a passion for high-performance computing and real-time systems. With over 4 years of specialized experience in GPU programming, I design and implement cutting-edge solutions for DNA sequencing and computational biology.</p>
 
-    <div class="row">
-      <div class="column" style="padding: 5%">
-        <font color="white">
-        <h3>I am currently at <a href="https://www.prellisbio.com/">Prellis Biologics</a> working on the software stack for a <a href="https://en.wikipedia.org/wiki/Multiphoton_lithography">multiphoton lithographic printer</a> and a <a href="https://en.wikipedia.org/wiki/Computer-generated_holography">computational holography</a> pipeline. </h3>
-            <img src="images/printing.gif" alt="Holographic Printing" width="300" height="300" style="display: block; margin: auto" >
-        </font>
-      </div>
-    </div>
+                    <p>My expertise lies in developing high-throughput data pipelines using C++, CUDA, and modern parallel programming techniques. I've architected systems capable of processing up to 12 GB/s of real-time data, optimized CUDA kernels achieving 25% performance improvements, and built robust CI/CD workflows for GPU applications.</p>
 
-    <div class="row">
-      <div class="column" style="padding: 5%">
-        <font color="white">
-        <h3>Recent Events and Employment:</h3>
-            <h5>2019 - Started Working Full Time @ Prellis Biologics</h5>
-            <h5>2018 - Graduated U.C. Davis with a B.S. in Electrical Engineering</h5>
-            <h5>2018 - Internship @ Tesla with Electronic Systems</h5>
-            <h5>2017 - Internship @ Tesla with Infotainment Hardware</h5>
-            <h5>2016 - Internship @ Dolby Laboratories with Consumer Projects Group</h5>
-            <h5>2015 - Started U.C. Davis in the Electrical Engineering Department</h5>
-        </font>
-      </div>
-    </div>
-      
-      
-    <div class="row">
-      <div class="column" style="padding: 5%">
-          <div class="container">
-          <a href="https://www.linkedin.com/in/hershel-shah/">
-              <i class="fa fa-linkedin-square" style="font-size: 36px; color: white; display: flex; margin: auto; padding: 2%; justify-content: center; align-content: center" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/HershelShah">
-              <i class="fa fa-github" style="font-size: 36px; color: white; display: flex; margin: auto; padding: 2%; justify-content: center; align-content: center" aria-hidden="true"></i>
-          </a>
-          <a href="files/hershel_shah_resume_2019.pdf">
-              <i class="fa fa-file" style="font-size: 36px; color: white; display: flex; margin: auto; padding: 2%; justify-content: center; align-content: center" aria-hidden="true"></i>
-          </a>
-          <a href="mailto: shahhp1@gmail.com">
-              <i class="fa fa-envelope" style="font-size: 36px; color: white; display: flex; margin: auto; padding: 2%; justify-content: center; align-content: center" aria-hidden="true"></i>
-          </a>
-          </div>
-      </div>
-    </div>
-      
-  </div>
+                    <p>I hold a B.S. in Electrical Engineering from UC Davis and have worked on diverse projects ranging from computational holography to RF testing systems. I'm currently seeking new opportunities where I can apply my GPU programming expertise to solve challenging technical problems.</p>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-number">4+</div>
+                            <div class="highlight-label">Years GPU Development</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">12GB/s</div>
+                            <div class="highlight-label">Data Throughput</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">25%</div>
+                            <div class="highlight-label">Kernel Optimization</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior GPU Software Engineer</h3>
+                            <span class="company">Roche Diagnostics</span>
+                            <span class="duration">March 2024 - Present</span>
+                            <span class="location">Santa Clara, CA</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Lead GPU software development for next-generation DNA sequencing platforms</li>
+                            <li>Architect high-performance computing solutions for real-time genomic data processing</li>
+                            <li>Mentor junior engineers on CUDA optimization and parallel programming best practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>GPU Software Engineer</h3>
+                            <span class="company">Roche Diagnostics</span>
+                            <span class="duration">July 2021 - March 2024</span>
+                            <span class="location">Santa Clara, CA</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Designed and implemented high-throughput (8GB/s) file writing system using C++, CUDA, DirectIO, and GDS for real-time DNA sequencing data output</li>
+                            <li>Optimized CUDA kernels with memory coalescence and shared memory techniques, achieving 25% performance improvement</li>
+                            <li>Integrated DPDK libraries enabling application to ingest up to 12 GB/s of DNA sequencing data via Mellanox cards</li>
+                            <li>Created disk I/O benchmarking application for characterizing performance with DirectIO, GDS, and HDF5 writing</li>
+                            <li>Designed and implemented CI/CD workflows for benchmarking and regression testing across GPU architectures (sm 70, 80, 90)</li>
+                            <li>Developed high-performance inter-process FIFO (12GB/s) with CPU/GPU synchronization mechanisms</li>
+                            <li>Converted, optimized, and benchmarked CNNs for classification using PyTorch and TensorRT</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Systems Software Engineer</h3>
+                            <span class="company">General Automation Laboratory Technology</span>
+                            <span class="duration">August 2020 - May 2021</span>
+                            <span class="location">San Carlos, CA</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Maintained core business application in C# for image analysis, instrument communication, and data management</li>
+                            <li>Implemented Poisson statistics calculator for dynamic dilution factor determination</li>
+                            <li>Researched and developed algorithms for well selection and arbitrary picker tool for micro-array chips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Systems Software Engineer</h3>
+                            <span class="company">Prellis Biologics</span>
+                            <span class="duration">January 2019 - January 2020</span>
+                            <span class="location">San Francisco, CA</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Co-inventor on patent (WO2020028431) for software methods in holography-based 3D printing</li>
+                            <li>Designed and implemented real-time pipeline for STL model processing including custom watertight voxelization, morphological operators, k-means clustering, and optical correction</li>
+                            <li>Built Python microservice for hardware control and calibration (3-axis stages, SLM, liquid lens, industrial laser)</li>
+                            <li>HolographX software won Innovation Award at Merck Technical Symposium</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Wireless Hardware/Electronic Systems Intern</h3>
+                            <span class="company">Tesla</span>
+                            <span class="duration">June 2018 - September 2018</span>
+                            <span class="location">Palo Alto, CA</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Created in-car suite of BASH tools reducing engineering time by 50% for radio quality measurement and analysis</li>
+                            <li>Designed and implemented radio test suite automating test processes using PyVisa</li>
+                            <li>Developed RF test suite for Bluetooth, 802.11b/g/n, WCDMA, GSM, and LTE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Golang</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Verilog</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>GPU & Parallel Computing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">CUDA</span>
+                        <span class="skill-tag highlight">OpenMP</span>
+                        <span class="skill-tag highlight">DPDK</span>
+                        <span class="skill-tag">DirectIO</span>
+                        <span class="skill-tag">GDS</span>
+                        <span class="skill-tag">NSight Systems</span>
+                        <span class="skill-tag">NSight Compute</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Boost</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorRT</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">ZeroMQ</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CMake</span>
+                        <span class="skill-tag">Bazel</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">SQL/NoSQL</span>
+                        <span class="skill-tag">Intel VTune</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Notable Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🚀</div>
+                    <h3>High-Throughput Data Pipeline</h3>
+                    <p>Architected and implemented 8GB/s file writing system using CUDA, DirectIO, and GPUDirect Storage for real-time DNA sequencing applications.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>CUDA</span>
+                        <span>DirectIO</span>
+                        <span>GDS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">⚡</div>
+                    <h3>DPDK Network Integration</h3>
+                    <p>Integrated DPDK libraries for kernel-bypass networking, enabling 12 GB/s data ingestion from Mellanox NICs for genomic sequencing pipelines.</p>
+                    <div class="project-tech">
+                        <span>DPDK</span>
+                        <span>C++</span>
+                        <span>Network Programming</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🧬</div>
+                    <h3>CNN Optimization for Genomics</h3>
+                    <p>Converted and optimized convolutional neural networks for DNA sequence classification using PyTorch and TensorRT, achieving significant inference speedup.</p>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>TensorRT</span>
+                        <span>Python</span>
+                        <span>CUDA</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🏆</div>
+                    <h3>HolographX (Patent & Award)</h3>
+                    <p>Developed computational holography pipeline for 3D bioprinting. Co-inventor on patent WO2020028431. Won Innovation Award at Merck Technical Symposium.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔧</div>
+                    <h3>GPU Benchmarking Suite</h3>
+                    <p>Created comprehensive benchmarking and regression testing framework for GPU applications across multiple NVIDIA architectures (Volta, Ampere, Hopper).</p>
+                    <div class="project-tech">
+                        <span>GitHub Actions</span>
+                        <span>CUDA</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔍</div>
+                    <h3>Computer Vision Projects</h3>
+                    <p>Open-source projects including jigsaw puzzle solver and CV algorithm library. Available on GitHub for educational and research purposes.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">I'm currently open to new opportunities, including full-time positions and contract work. If you're looking for a GPU software engineer with expertise in high-performance computing, let's connect!</p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:shahhp1@gmail.com" class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>shahhp1@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+14082901594" class="contact-method">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>408-290-1594</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hershel-shah" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/hershel-shah</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/HershelShah" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/HershelShah</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability">
+                        <div class="status-indicator"></div>
+                        <span>Available for opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hershel Shah. All rights reserved.</p>
+            <p class="footer-note">Built with HTML, CSS, and vanilla JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
