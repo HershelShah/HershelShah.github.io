@@ -1,0 +1,15 @@
+{{ $items := .Params }}
+<div class="timeline">
+  {{ range $items }}
+  <div class="timeline-item">
+    <div class="timeline-card">
+      <h3>{{ .title }}</h3>
+      <div class="timeline-company">{{ .company }}</div>
+      <div class="timeline-meta">
+        <span>{{ .duration }}</span>
+        <span>{{ .location }}</span>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>

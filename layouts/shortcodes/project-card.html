@@ -1,0 +1,20 @@
+<div class="project-card">
+  <h3>{{ .Get "title" }}</h3>
+  <p>{{ .Get "description" }}</p>
+  {{ $tags := split (.Get "tags") "," }}
+  <div class="project-tags">
+    {{ range $tags }}
+    <span class="project-tag">{{ strings.TrimSpace . }}</span>
+    {{ end }}
+  </div>
+  {{ if or (.Get "github") (.Get "demo") }}
+  <div class="project-links">
+    {{ if .Get "github" }}
+    <a href="{{ .Get "github" }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+    {{ end }}
+    {{ if .Get "demo" }}
+    <a href="{{ .Get "demo" }}" target="_blank" rel="noopener noreferrer">Demo</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

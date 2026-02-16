@@ -1,0 +1,12 @@
+{{ $category := .Get "category" }}
+{{ $variant := .Get "variant" | default "blue" }}
+{{ $skills := split (.Get "items") "," }}
+
+<div class="skills-category">
+  <h3>{{ $category }}</h3>
+  <div class="skills-tags">
+    {{ range $skills }}
+    <span class="skill-tag{{ if eq $variant "green" }} skill-tag--green{{ else if eq $variant "purple" }} skill-tag--purple{{ end }}">{{ strings.TrimSpace . }}</span>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,114 @@
+baseURL = "https://hershelshah.github.io/"
+languageCode = "en-us"
+title = "Hershel Shah | GPU Software Engineer"
+theme = "PaperMod"
+[pagination]
+pagerSize = 5
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Hershel Shah"
+description = "GPU Software Engineer specializing in CUDA, C++, and high-performance computing."
+keywords = ["GPU Engineer", "CUDA", "C++", "Software Engineer", "High Performance Computing"]
+author = "Hershel Shah"
+defaultTheme = "dark"
+disableThemeToggle = true
+ShowReadingTime = false
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = false
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+
+  [params.assets]
+  favicon = "/images/favicon.png"
+  favicon16x16 = "/images/favicon.png"
+  favicon32x32 = "/images/favicon.png"
+  apple_touch_icon = "/images/favicon.png"
+
+  [params.homeInfoParams]
+  Title = "Hershel Shah"
+  Content = "GPU Software Engineer — Building high-performance computing systems"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/HershelShah"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/hershel-shah"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:shahhp1@gmail.com"
+
+[params.profileMode]
+enabled = true
+title = "Hershel Shah"
+subtitle = "GPU Software Engineer"
+imageUrl = ""
+imageWidth = 120
+imageHeight = 120
+
+  [[params.profileMode.buttons]]
+  name = "About"
+  url = "/about/"
+
+  [[params.profileMode.buttons]]
+  name = "Experience"
+  url = "/experience/"
+
+  [[params.profileMode.buttons]]
+  name = "Blog"
+  url = "/blog/"
+
+  [[params.profileMode.buttons]]
+  name = "Resume"
+  url = "/files/hershel_shah_resume_2019.pdf"
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "experience"
+name = "Experience"
+url = "/experience/"
+weight = 20
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 40
+
+[markup]
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  style = "monokai"
+
+  [markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
