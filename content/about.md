@@ -10,26 +10,31 @@ hidemeta: true
 
 ## About Me
 
-I'm a GPU Software Engineer currently working at Annapurna Labs. I graduated from UC Davis with a B.S. in Electrical Engineering and have experience working with high-performance computing systems, CUDA programming, and real-time data processing.
+I'm a software engineer currently working at Annapurna Labs (AWS) on the Elastic Collectives Team. I'm contributing to the [aws-ofi-nccl](https://github.com/aws/aws-ofi-nccl) plugin which helps accelerate ML inference and training on AWS hardware under the github account of [hershys-aws](https://github.com/hershys-aws).
 
-My background includes GPU software development, systems programming, and working on projects in genomics, 3D bioprinting, and wireless systems. I enjoy solving technical challenges and building efficient software solutions.
+Aside from work I enjoy music, particularly EDM and Jazz, running, weightlifting and travelling.
 
 ## Education
 
-**University of California, Davis**
-B.S. in Electrical Engineering
+**University of California, Davis** — B.S. in Electrical Engineering <span class="timeline-meta"><span>2015 - 2018</span><span>Davis, CA</span></span>
+
+Relevant Coursework: Electromagnetics, Non/Linear Circuits Analysis, Device Physics, Digital System Design, RF & Microwave Engineering, Antenna Design & Analysis, Computer Architecture, Parallel Programming in CUDA, Signal & Systems
+
+Research: Performed simulations of various infinite meta-surfaces in the Giga/Tera hertz range for satellite communications.
 
 ## Technical Skills
 
 <div class="skills-section">
 
-{{< skills category="Languages" variant="purple" items="C/C++, Python, Bash, Golang, Java, Rust, MATLAB, Verilog" >}}
+{{< skills category="Languages" variant="purple" items="C/C++, Python, C#, Bash, Golang, Java, Rust, MATLAB, Verilog, SQL" >}}
 
-{{< skills category="GPU & Parallel Computing" variant="green" items="CUDA, OpenMP, DPDK, DirectIO, GDS, NSight Systems, NSight Compute" >}}
+{{< skills category="GPU & Parallel Computing" variant="green" items="CUDA, OpenMP, DPDK, DirectIO, GDS, NSight Systems, NSight Compute, TensorRT" >}}
 
-{{< skills category="Frameworks & Libraries" variant="blue" items="Boost, OpenCV, PyTorch, TensorRT, NumPy, Pandas, ZeroMQ, RabbitMQ" >}}
+{{< skills category="Frameworks & Libraries" variant="blue" items="Boost, OpenCV, PyTorch, NumPy, Pandas, ZeroMQ, RabbitMQ, FastAPI, PyVISA, ROS" >}}
 
-{{< skills category="Tools & Technologies" variant="blue" items="CMake, Bazel, Git, Docker, GitHub Actions, FastAPI, Redis, SQL/NoSQL, Intel VTune" >}}
+{{< skills category="Tools & Infrastructure" variant="blue" items="CMake, Bazel, Git, Docker, GitHub Actions, Redis, SQL/NoSQL, Intel VTune" >}}
+
+{{< skills category="Hardware & Simulation" variant="green" items="Nvidia Jetson, ESP32/8266, ARM, Raspberry Pi, ANSYS HFSS, COMSOL, ModelSim" >}}
 
 </div>
 

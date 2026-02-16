@@ -628,6 +628,30 @@ a.timeline-item:hover .timeline-hint {
 }
 
 /* ============================================
+   Post Navigation (prev/next)
+   ============================================ */
+.paginav {
+    background: rgba(22, 27, 34, 0.75) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-primary) !important;
+    border-radius: 0.75rem !important;
+}
+
+.paginav a:hover {
+    background: rgba(33, 38, 45, 0.75) !important;
+}
+
+.post-footer {
+    border-top: none;
+}
+
+/* Hide empty post-tags */
+.post-tags:empty {
+    display: none;
+}
+
+/* ============================================
    Footer
    ============================================ */
 footer.footer {

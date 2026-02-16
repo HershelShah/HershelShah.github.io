@@ -80,7 +80,7 @@ imageHeight = 120
 
   [[params.profileMode.buttons]]
   name = "Resume"
-  url = "/files/hershel_shah_resume_2019.pdf"
+  url = "/files/hershel_shah_resume.pdf"
 
 [[menu.main]]
 identifier = "about"
