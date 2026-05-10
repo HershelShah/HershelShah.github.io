@@ -76,10 +76,6 @@ imageHeight = 120
   url = "/experience/"
 
   [[params.profileMode.buttons]]
-  name = "Projects"
-  url = "/projects/"
-
-  [[params.profileMode.buttons]]
   name = "Resume"
   url = "/files/hershel_shah_resume.pdf"
 
@@ -94,12 +90,6 @@ identifier = "experience"
 name = "Experience"
 url = "/experience/"
 weight = 20
-
-[[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
-weight = 30
 
 [[menu.main]]
 identifier = "resume"
