@@ -17,9 +17,10 @@ minifyOutput = true
 [params]
 env = "production"
 title = "Hershel Shah"
-description = "GPU Software Engineer specializing in CUDA, C++, and high-performance computing."
-keywords = ["GPU Engineer", "CUDA", "C++", "Software Engineer", "High Performance Computing"]
+description = "GPU Software Engineer shipping CUDA, distributed HPC, and high-throughput systems. Currently at AWS Annapurna Labs on the Elastic Collectives team."
+keywords = ["GPU Engineer", "CUDA", "NCCL", "EFA", "Annapurna Labs", "AWS", "HPC", "C++", "Distributed Systems", "High Performance Computing"]
 author = "Hershel Shah"
+images = ["/images/og-image.png"]
 defaultTheme = "dark"
 disableThemeToggle = true
 ShowReadingTime = false
@@ -61,7 +62,7 @@ showtoc = false
 [params.profileMode]
 enabled = true
 title = "Hershel Shah"
-subtitle = "GPU Software Engineer"
+subtitle = "GPU Software Engineer building distributed HPC at **AWS Annapurna Labs** — CUDA, NCCL, EFA, and systems that move data fast."
 imageUrl = ""
 imageWidth = 120
 imageHeight = 120
@@ -75,8 +76,8 @@ imageHeight = 120
   url = "/experience/"
 
   [[params.profileMode.buttons]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Projects"
+  url = "/projects/"
 
   [[params.profileMode.buttons]]
   name = "Resume"
@@ -95,9 +96,15 @@ url = "/experience/"
 weight = 20
 
 [[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 30
+
+[[menu.main]]
+identifier = "resume"
+name = "Resume"
+url = "/files/hershel_shah_resume.pdf"
 weight = 40
 
 [markup]
