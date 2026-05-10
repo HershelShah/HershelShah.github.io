@@ -799,3 +799,384 @@ button:focus-visible {
         padding: 1.25rem;
     }
 }
+
+/* ============================================
+   Home — Currently strip + Highlights grid
+   ============================================ */
+.home-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+}
+
+.home-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: -2rem;
+}
+
+.currently {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding: 0.75rem 1.25rem;
+    background: rgba(22, 27, 34, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-primary);
+    border-radius: 999px;
+    align-self: center;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    max-width: 100%;
+}
+
+.currently a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.currently a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.currently-dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background: var(--accent-green);
+    box-shadow: 0 0 12px var(--glow-green);
+    animation: currently-pulse 2.4s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes currently-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.55; transform: scale(0.85); }
+}
+
+.currently-label {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.currently-text {
+    color: var(--text-primary);
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.highlights-title {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+.highlight-card {
+    background: rgba(22, 27, 34, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-primary);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.highlight-card:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+.highlight-metric {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--accent-green);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.highlight-card--accent .highlight-metric {
+    color: var(--accent-purple);
+    font-size: 1.5rem;
+}
+
+.highlight-label {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.highlight-detail {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* ============================================
+   About — credentials strip + contact CTA
+   ============================================ */
+.about-credentials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.credential {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.credential-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.credential-value {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+a.credential-value {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+a.credential-value:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.contact-cta {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+
+.contact-cta p {
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 0.625rem 1.1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue) !important;
+    box-shadow: 0 0 12px rgba(88, 166, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+.contact-link--primary {
+    background: var(--accent-blue);
+    color: var(--bg-primary) !important;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 16px var(--glow-blue);
+}
+
+.contact-link--primary:hover {
+    filter: brightness(1.15);
+    color: var(--bg-primary) !important;
+    box-shadow: 0 0 24px var(--glow-blue);
+}
+
+/* ============================================
+   Projects page
+   ============================================ */
+.projects-intro {
+    max-width: 720px;
+    margin: 0 0 2rem 0;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.projects-intro a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.projects-intro a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.project-card {
+    background: rgba(22, 27, 34, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.project-card-badge {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-primary);
+    color: var(--accent-purple);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    background: rgba(210, 168, 255, 0.08);
+}
+
+/* ============================================
+   404
+   ============================================ */
+.not-found {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.not-found-inner {
+    max-width: 560px;
+    text-align: center;
+    background: rgba(22, 27, 34, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-primary);
+    border-radius: 0.75rem;
+    padding: 3rem 2rem;
+}
+
+.not-found-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--accent-purple);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.04em;
+    text-shadow: 0 0 24px var(--glow-purple);
+}
+
+.not-found-title {
+    font-size: 1.75rem;
+    margin: 0 0 1rem 0;
+}
+
+.not-found-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.not-found-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.not-found-btn {
+    display: inline-block;
+    padding: 0.625rem 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.not-found-btn:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue) !important;
+    transform: translateY(-1px);
+}
+
+.not-found-btn--primary {
+    background: var(--accent-blue);
+    color: var(--bg-primary) !important;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 16px var(--glow-blue);
+}
+
+.not-found-btn--primary:hover {
+    color: var(--bg-primary) !important;
+    filter: brightness(1.15);
+}
+
+/* ============================================
+   Responsive — home / about / 404
+   ============================================ */
+@media (max-width: 768px) {
+    .home-extra {
+        gap: 2rem;
+        margin-top: -1rem;
+    }
+
+    .currently {
+        font-size: 0.85rem;
+        padding: 0.65rem 1rem;
+    }
+
+    .highlight-metric {
+        font-size: 1.6rem;
+    }
+
+    .highlight-card--accent .highlight-metric {
+        font-size: 1.2rem;
+    }
+
+    .not-found-code {
+        font-size: 3.5rem;
+    }
+
+    .not-found-title {
+        font-size: 1.4rem;
+    }
+}
+
